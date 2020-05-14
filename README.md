@@ -1,6 +1,17 @@
 userテーブル
+|Column|Type|Options|
+|------|----|-------|
+
+
 groupテーブル
+|Column|Type|Options|
+|------|----|-------|
+
 messagesテーブル 
+|Column|Type|Options|
+|------|----|-------|
+
+
 groups_usersテーブル
 
 |Column|Type|Options|
