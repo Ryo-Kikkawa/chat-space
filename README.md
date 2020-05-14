@@ -1,4 +1,7 @@
- groups_usersテーブル
+userテーブル
+groupテーブル
+messagesテーブル 
+groups_usersテーブル
 
 |Column|Type|Options|
 |------|----|-------|
