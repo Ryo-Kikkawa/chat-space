@@ -1,0 +1,51 @@
+.wrapper {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+
+.left.side {
+  height: 100vh;
+  width: 300px;
+  background-color: #2f3e51;
+
+  .side-header {
+    width: 300px;
+    height: 100px;
+    background-color: #253141;
+    display: flex;
+  .top-item {
+    height: 20px;
+    width: 260px;
+    align-items: center;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+      &__name {
+        color: #fff;
+      }
+      &__icons {
+        a {
+          color: #fff;
+          text-decoration: none;
+        }
+      
+    }
+  }
+  }
+  .groupbox {
+    height: calc(100% - 100px);
+    display: block;
+    color: white;
+    font-weight: bold;
+    .groupbox-title {
+      font-size: 15px;
+      padding: 20px 0 0 20px;
+
+    }
+    .groupbox-log {
+      font-size: 11px;
+      padding: 5px 0 40px 20px;
+    }
+  }
+}
+}
