@@ -1,14 +1,15 @@
 .left.side
   .side-header
     .top-item
-      .top-item__name
-        name
-      .top-item__icons
+      %h3.top-item__name
+        = current_user.name
+      %ul.top-item__icons
+        %li.icon
         = link_to "#" do
-          = icon('far', 'edit')
-
-        = link_to "#" do
-          = icon('fa', 'cog fa-spin')
+          = icon('far', 'edit', class: 'icon1')
+        %li.icon
+        = link_to edit_user_path(current_user) do
+          = icon('fa', 'cog fa-spin', class: 'icon2')
   .groupbox
     .groupbox-title
       techcamp

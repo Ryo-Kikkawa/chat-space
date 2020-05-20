@@ -24,9 +24,13 @@
         color: #fff;
       }
       &__icons {
+        display: flex;
         a {
           color: #fff;
           text-decoration: none;
+        }
+        .icon1 {
+          padding-right: 5px;
         }
       
     }
