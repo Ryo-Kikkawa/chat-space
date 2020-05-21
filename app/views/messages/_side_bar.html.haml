@@ -5,13 +5,14 @@
         = current_user.name
       %ul.top-item__icons
         %li.icon
-        = link_to "#" do
+        = link_to new_group_path do
           = icon('far', 'edit', class: 'icon1')
         %li.icon
         = link_to edit_user_path(current_user) do
           = icon('fa', 'cog fa-spin', class: 'icon2')
   .groupbox
-    .groupbox-title
-      techcamp
-    .groupbox-log
-      まだメッセージがありません
+    - current_user.groups.each do |group|
+      .groupbox__title
+        = group.name
+      .groupbox__log
+        まだメッセージがありません

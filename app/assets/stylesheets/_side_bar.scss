@@ -41,12 +41,12 @@
     display: block;
     color: white;
     font-weight: bold;
-    .groupbox-title {
+    &__title {
       font-size: 15px;
       padding: 20px 0 0 20px;
 
     }
-    .groupbox-log {
+    &__log {
       font-size: 11px;
       padding: 5px 0 40px 20px;
     }
