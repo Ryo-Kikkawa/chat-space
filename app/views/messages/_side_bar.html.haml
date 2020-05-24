@@ -12,7 +12,8 @@
           = icon('fa', 'cog fa-spin', class: 'icon2')
   .groupbox
     - current_user.groups.each do |group|
-      .groupbox__title
-        = group.name
-      .groupbox__log
-        まだメッセージがありません
+      = link_to group_messages_path(group) do
+        .groupbox__title  
+          = group.name
+        .groupbox__log
+          = group.show_last_message

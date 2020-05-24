@@ -2,25 +2,20 @@
 
   .main-header
     .main-header__text
-      text
+      = @group.name
       .main-header__member
-        Member&nbsp;:&nbsp;name
-    = link_to "edit","#", class:'main-header__btn'
+        - @group.users.each do |user|
+          = user.name
+    = link_to "edit",edit_group_path(params[:group_id]), class:'main-header__btn'
+
   .messages
-    .messages__form
-      .messages__form__name
-        name
-      .messages__form__time
-        2020/05/18(Wed) 12:32:10
-    .messages__log
-      完成おめでとう！！
+    = render @messages
 
-  .chat
-    %form.chat__box
-      %input{type:"text", class:'chat__box__text', value:'type a message'}
-      
-        %label{class: "chat__box__text__image"}
-          = icon('fas', 'image')
-          %input{type: "file", class: "chat__box__text__image__file"}
-
-    = link_to "Send","#", class:'chat__send'
+  = form_for [@group, @message] do |f|
+    .chat
+      .chat__box
+        = f.text_field :content, class: 'chat__box__text', placeholder: 'type a message' 
+        = f.label :image, class: "chat__box__image" do
+          = icon('fas', 'image', class: 'icon')
+          = f.file_field :image, class: "chat__box__image__file"
+      = f.submit "Send", class: 'chat__send'
