@@ -58,5 +58,5 @@ $(function(){
       $('.messages').animate({ scrollTop: $('.messages')[0].scrollHeight});
       $('.chat__send').prop('disabled',false);
     })
-})
+  })
 });
