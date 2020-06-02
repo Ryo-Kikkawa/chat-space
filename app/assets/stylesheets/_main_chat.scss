@@ -39,8 +39,10 @@
     height: calc(100% - 190px);
     width: 100%;
     background-color: #fafafa;
+    border: solid 1px #eeeeee;
     padding-left: 40px;
     overflow: scroll;
+    .message {
     &__form {
       padding-top: 35px;
       display: flex;
@@ -65,6 +67,7 @@
       &__image {
 
       }
+    }
     }
   }
 

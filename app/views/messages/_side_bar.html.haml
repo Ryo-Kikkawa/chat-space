@@ -9,7 +9,7 @@
           = icon('far', 'edit', class: 'icon1')
         %li.icon
         = link_to edit_user_path(current_user) do
-          = icon('fa', 'cog fa-spin', class: 'icon2')
+          = icon('fa', 'cog', class: 'icon2')
   .groupbox
     - current_user.groups.each do |group|
       = link_to group_messages_path(group) do
