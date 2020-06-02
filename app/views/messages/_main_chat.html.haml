@@ -7,7 +7,7 @@
         Member：
         - @group.users.each do |user|
           = user.name
-    = link_to "edit",edit_group_path(params[:group_id]), class:'main-header__btn'
+    = link_to "Edit",edit_group_path(params[:group_id]), class:'main-header__btn'
 
   .messages
     = render @messages

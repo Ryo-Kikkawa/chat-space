@@ -7,31 +7,34 @@
     width: 100%;
     background-color: #ffffff;
     display: flex;
+    padding: 0 40px;
     justify-content: space-between;
     &__text {
       height: calc(100px - 35px);
       font-size: 20px;
       color: #333333;
       top: 35px;
-      left: 40px;
       position: relative;
 
     }
       &__member {
         font-size: 12px;
         color: #999999;
-        // position: absolute;
+        margin-top: 15px;
         bottom: 0;
       }
     &__btn {
       color: #38aef0;
       border: 1px solid #38aef0;
       font-size: 16px;
+      height: 40px;
       width: 72px;
       line-height: 40px;
       text-align: center;
       text-decoration: none;
-      margin: 28px 40px 28px 0;
+      margin: 30px 0px 0px;
+      padding: 0 20px;
+
     }
   }
 
