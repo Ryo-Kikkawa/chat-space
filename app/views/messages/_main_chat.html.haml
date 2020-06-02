@@ -4,6 +4,7 @@
     .main-header__text
       = @group.name
       .main-header__member
+        Member：
         - @group.users.each do |user|
           = user.name
     = link_to "edit",edit_group_path(params[:group_id]), class:'main-header__btn'
